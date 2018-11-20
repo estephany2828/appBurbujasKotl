@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/paddingLogin"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_thin"
+            android:text="@string/titleBienvenidoLogin"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textSizeBienvenidaLogin"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textDescripcionLogin"
+            android:textColor="#fff"
+            android:textSize="@dimen/textSize"
+            android:fontFamily="@font/roboto_thin"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/marginTop">
+
+        <EditText
+                android:id="@+id/editTxtNombre"
+                android:layout_width="@dimen/widthEditTextView"
+                android:layout_height="wrap_content"
+                android:hint="@string/editTextNameLogin"
+                android:layout_margin="@dimen/layout_marginEditText"
+                android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+                android:fontFamily="@font/roboto_thin"
+        />
+        <EditText
+                android:id="@+id/editTxtIdentificacion"
+                android:layout_width="@dimen/widthEditTextView"
+                android:layout_height="wrap_content"
+                android:hint="@string/editTextIdLogin"
+                android:inputType="number"
+                android:layout_margin="@dimen/layout_marginEditText"
+                android:drawableLeft="@drawable/ic_perm_contact_calendar_black_24dp"
+                android:fontFamily="@font/roboto_thin"
+        />
+        <EditText
+                android:id="@+id/edDirLogin"
+                android:layout_width="@dimen/widthEditTextView"
+                android:layout_height="wrap_content"
+                android:hint="@string/editTextDirLogin"
+                android:layout_margin="@dimen/layout_marginEditText"
+                android:drawableLeft="@drawable/ic_perm_contact_calendar_black_24dp"
+                android:fontFamily="@font/roboto_thin"
+        />
+
+
+        <EditText
+                android:id="@+id/editTxtCelular"
+                android:layout_width="@dimen/widthEditTextView"
+                android:layout_height="wrap_content"
+                android:hint="@string/editTextCelularLogin"
+                android:inputType="number"
+                android:layout_margin="@dimen/layout_marginEditText"
+                android:drawableLeft="@drawable/ic_phone_black_24dp"
+                android:fontFamily="@font/roboto_thin"
+        />
+
+        <Button
+                android:id="@+id/guardarUsuarioId"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/textBtnGuardarLogin"
+                android:textSize="@dimen/textSizeBtn"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="@dimen/marginTopBtn"
+                android:fontFamily="@font/roboto_thin"
+                android:drawableRight="@drawable/ic_send_black_24dp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

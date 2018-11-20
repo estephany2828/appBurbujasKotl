@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="@dimen/cardElevation"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="@dimen/marginCardView"
+        android:layout_marginHorizontal="@dimen/marginCardView"
+        android:layout_marginBottom="0dp"
+
+
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <ImageView
+                android:id="@+id/imgViewLavadoraId"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_Card_View"
+                android:src="@color/colorPrimary"
+                android:padding="@dimen/padding_Card_View"
+                android:scaleType="centerCrop"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:padding="@dimen/paddingLinearLayout">
+
+            <TextView
+                    android:id="@+id/txtViewMarcaId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textMarcaCardView"
+                    android:fontFamily="@font/roboto_thin"
+
+                    android:textSize="@dimen/textSizeMarca"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                    android:textStyle="bold"
+            />
+
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                        android:id="@+id/txtViewNumHId"
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textViewNumHoras"
+                        android:fontFamily="@font/roboto_thin"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                        android:textSize="@dimen/textSizeNumHora"/>
+                <TextView
+                        android:id="@+id/txtViewCapId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="27lb"
+                        android:fontFamily="@font/roboto_thin"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                        android:textSize="@dimen/textSizeCap"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
